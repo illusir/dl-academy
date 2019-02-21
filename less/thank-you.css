@@ -1,0 +1,17 @@
+/*Thank You*/
+.thank-you-icon {
+  background: url('./images/SVG/sprait.svg') no-repeat -480px -82px;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.h2--thank-you {
+  width: 380px;
+}
+.text--wide-box {
+  width: 380px;
+  padding-top: 10px;
+  opacity: 0.8;
+}
+/*end Thank You*/
+/*# sourceMappingURL=thank-you.css.map */

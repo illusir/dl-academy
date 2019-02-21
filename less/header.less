@@ -1,0 +1,109 @@
+
+/*header*/
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.container--header {
+  padding-top: 60px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 600;
+
+  &:hover {
+    color: @yellow;
+  }
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  background: url('./images/SVG/sprait.svg') no-repeat -1px -1px;
+  margin-right: 20px;
+}
+
+.contact-block {
+  display: flex;
+  height: 30px;
+  align-items: flex-start;
+
+  &__link {
+    &--tel {
+      padding-right: 20px;
+      color: @yellow;
+      font-weight: 600;
+
+      &:hover {
+        color: @white;
+      }
+    }
+  }
+
+  &__tel {
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+
+  &__bar {
+    width: 24px;
+    height: 2px;
+    background-color: @yellow;
+    margin: 6px 0;
+  }
+}
+
+.mobile-button {
+  display: none;
+}
+
+.contact-block__buttons {
+  width: 270px;
+  position: relative;
+
+  &:hover {
+    .buttons-block___hidden {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &--all {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.buttons-block___hidden {
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.nav__link:hover {
+  color: @yellow;
+}
+
+/*end header*/
