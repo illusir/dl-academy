@@ -1,0 +1,84 @@
+
+/*1st screen*/
+
+.first-screen {
+  height: 100vh;
+}
+
+.container--first-screen {
+  .right-side-flex();
+  height: 100vh;
+}
+
+.scroll-down {
+  position: absolute;
+  display: block;
+  background: url('./images/SVG/scroll.svg') center no-repeat;
+  bottom: 40px;
+  width: 24px;
+  height: 36px;
+  left: calc(50% - 12px);
+  animation: bounce 1s infinite linear;
+}
+
+@keyframes bounce {
+  0% { bottom: 40px; }
+  50% { bottom: 50px; }
+  100% { bottom: 40px; }
+}
+
+.social {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 40px;
+
+  &__link {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    margin-right: 10px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--last {
+      margin-right: 0;
+    }
+
+    &--fb {
+      background: url('./images/SVG/sprait.svg') no-repeat -1px -184px;
+    }
+
+    &--tw {
+      background: url('./images/SVG/sprait.svg') no-repeat -33px -184px;
+    }
+
+    &--yp {
+      background: url('./images/SVG/sprait.svg') no-repeat -65px -184px;
+    }
+
+    &--gp {
+      background: url('./images/SVG/sprait.svg') no-repeat -97px -184px;
+    }
+  }
+}
+
+.text-block {
+  &--right {
+    width: 580px;
+  }
+
+  &__h1 {
+    font-family: "Playfair Display", serif;
+    font-size: @h1-first-screen;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+}
+
+/*end 1st screen*/

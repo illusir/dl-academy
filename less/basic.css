@@ -1,0 +1,167 @@
+/*basic*/
+body {
+  background: black;
+}
+* {
+  margin: 0;
+  font-family: "Signika", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.section--common-1 {
+  background: #000 url('./images/images/1st-screen.jpg') top no-repeat;
+  background-size: 100vw;
+}
+.section--common-2 {
+  background: #000 url('./images/images/mid-page.jpg') center no-repeat;
+  background-size: 100vw;
+}
+.container {
+  width: 1180px;
+  position: relative;
+}
+.container--content {
+  padding-top: 100px;
+}
+.link {
+  text-decoration: none;
+}
+.link--button {
+  font-weight: 600;
+  font-size: 14px;
+}
+.link--black {
+  color: black;
+}
+.link--huge {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  color: #FFE195;
+  padding: 20px 0 30px;
+  font-weight: bold;
+}
+.link--huge:hover {
+  color: white;
+}
+.button {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.button:hover {
+  transition-duration: 0.5s;
+  background-color: #E7CC89;
+  color: black;
+}
+.button--grey {
+  background-color: #2D3A52;
+  color: rgba(255, 255, 255, 0.4);
+}
+.button--grey:hover {
+  color: black;
+}
+.button--grey:hover .link {
+  color: black;
+}
+.button--small {
+  height: 30px;
+  padding: 0 12px;
+}
+.button--yellow {
+  background-color: #FFE195;
+  color: black;
+}
+.button--black {
+  background-color: #0E1420;
+  color: #FFE195;
+}
+.button--black::before {
+  background: url('./images/SVG/sprait.svg') no-repeat -1px -163px;
+}
+.button--black:hover {
+  color: black;
+}
+.button--black:hover::before {
+  background: url('./images/SVG/sprait.svg') no-repeat -1px -174px;
+}
+.button--arrow {
+  position: relative;
+  display: inline-flex;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  align-items: center;
+}
+.button--arrow::before {
+  display: inline-block;
+  height: 9px;
+  width: 14px;
+  content: '';
+  background: url('./images/SVG/sprait.svg') no-repeat -1px -174px;
+  margin-right: 10px;
+}
+.button--wide {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+}
+.button--wide .link {
+  opacity: 0.4;
+}
+.button--wide:hover .link {
+  opacity: 1;
+}
+.h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.h4 {
+  opacity: 0.8;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.text {
+  line-height: 26px;
+  opacity: 0.8;
+}
+.text--vibrant {
+  opacity: 1;
+}
+.wide-box__item {
+  background: rgba(27, 49, 75, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wide-box__item .content {
+  padding: 100px;
+  display: flex;
+  width: 100%;
+}
+.decorative {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  font-weight: bold;
+}
+.date {
+  font-size: 14px;
+  opacity: 0.5;
+}
+/*end basic*/
+/*# sourceMappingURL=basic.css.map */

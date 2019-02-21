@@ -1,0 +1,74 @@
+/*1st screen*/
+.first-screen {
+  height: 100vh;
+}
+.container--first-screen {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+}
+.scroll-down {
+  position: absolute;
+  display: block;
+  background: url('./images/SVG/scroll.svg') center no-repeat;
+  bottom: 40px;
+  width: 24px;
+  height: 36px;
+  left: calc(50% - 12px);
+  animation: bounce 1s infinite linear;
+}
+@keyframes bounce {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+.social {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 40px;
+}
+.social__link {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  margin-right: 10px;
+}
+.social__link--last {
+  margin-right: 0px;
+}
+.social__link:hover {
+  opacity: 0.5;
+}
+.social__link--fb {
+  background: url('./images/SVG/sprait.svg') no-repeat -1px -184px;
+}
+.social__link--tw {
+  background: url('./images/SVG/sprait.svg') no-repeat -33px -184px;
+}
+.social__link--yp {
+  background: url('./images/SVG/sprait.svg') no-repeat -65px -184px;
+}
+.social__link--gp {
+  background: url('./images/SVG/sprait.svg') no-repeat -97px -184px;
+}
+.text-block--right {
+  width: 580px;
+}
+.text-block__h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  font-weight: bold;
+}
+.text-block__text {
+  margin-top: 10px;
+}
+/*end 1st screen*/
+/*# sourceMappingURL=first-screen.css.map */
