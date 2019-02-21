@@ -1,1 +1,1 @@
-# wip-site
+# training site DL Academy
