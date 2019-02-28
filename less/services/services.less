@@ -1,0 +1,97 @@
+
+/*services*/
+
+.services-block {
+  display: flex;
+  flex-flow: wrap;
+
+  &__item {
+    background: rgba(27, 49, 75, 0.75);
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 380px;
+    height: 380px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    transition: opacity 0.5s;
+
+    &:hover {
+      .services-icon, .h4--services, .text--services {
+        opacity: 1;
+      }
+
+      .button {
+        background-color: @yellow;
+
+        .link {
+          color: @black-text;
+          opacity: 1;
+        }
+      }
+    }
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}
+
+.h2--20px-padding {
+  padding-bottom: 15px;
+  padding-right: 0;
+}
+
+.services-icon {
+  margin-bottom: 14px;
+  margin-top: 48px;
+  opacity: 0.5;
+
+  &--1 {
+    background: url('./images/SVG/sprait.svg') no-repeat -560px -82px;
+    .services-icon-size();
+  }
+
+  &--2 {
+    background: url('./images/SVG/sprait.svg') no-repeat -80px -82px;
+    .services-icon-size();
+  }
+
+  &--3 {
+    background: url('./images/SVG/sprait.svg') no-repeat -160px -82px;
+    .services-icon-size();
+  }
+
+  &--4 {
+    background: url('./images/SVG/sprait.svg') no-repeat -240px -82px;
+    .services-icon-size();
+  }
+
+  &--5 {
+    background: url('./images/SVG/sprait.svg') no-repeat -320px -82px;
+    .services-icon-size();
+  }
+
+  &--6 {
+    background: url('./images/SVG/sprait.svg') no-repeat -400px -82px;
+    .services-icon-size();
+  }
+}
+
+
+.h4--services {
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  opacity: 0.9;
+}
+
+.text--services {
+  text-align: center;
+  padding: 0 50px;
+  opacity: 0.8;
+}
+
+/*end services*/

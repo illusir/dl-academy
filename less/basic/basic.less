@@ -12,6 +12,10 @@ body {
   font-weight: normal;
 }
 
+::selection {
+  background: @dark-yellow;
+}
+
 .section {
   .section-flex();
 
@@ -29,6 +33,7 @@ body {
 .container {
   width: 1180px;
   position: relative;
+  flex-wrap: wrap;
 
   &--header {
     position: absolute;
@@ -68,6 +73,7 @@ body {
 .button {
   .button-flex();
   .button-style();
+  transition-duration: 0.5s;
 
   &__arrow {
     width: 14px;
@@ -94,7 +100,6 @@ body {
   }
 
   &:hover {
-    transition-duration: 0.5s;
     background-color: @dark-yellow;
     color: @black-text;
   }
@@ -163,13 +168,13 @@ body {
   font-family: "Playfair Display", serif;
   font-size: @h2;
   font-weight: bold;
-  padding-bottom: 40px;
+  padding-bottom: 28px;
 }
 
 .h4 {
   opacity: 0.8;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .text {
@@ -178,7 +183,8 @@ body {
 
   &--wide-box {
     width: 380px;
-    padding-top: 10px;
+    padding-top: 7px;
+    padding-left: 10px;
     opacity: 0.8;
   }
 
@@ -194,7 +200,7 @@ body {
   align-items: flex-start;
 
   .content {
-    padding: 100px;
+    padding: 70px 100px 103px 100px;
     display: flex;
     width: 100%;
   }
@@ -212,3 +218,40 @@ body {
 }
 
 /*end basic*/
+
+/*basic mobile*/
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+
+    .container {
+        width: calc(100vw - 40px);
+
+        &--content {
+          padding-top: 70px;
+        }
+    }
+
+    .h2 {
+      font-size: 26px;
+    }
+
+
+    .wide-box__item {
+      background: rgba(27, 49, 75, 1);
+
+      .content {
+        padding: 40px 0 103px 0;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+
+        .half-box {
+          width: calc(100vw - 40px);
+        }
+      }
+    }
+
+    .text--wide-box {
+      padding: 0;
+    }
+}
