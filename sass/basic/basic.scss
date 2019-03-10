@@ -1,0 +1,357 @@
+/*basic*/
+
+body {
+  background: $black-text;
+}
+
+.body-inner {
+  background: #050713;
+}
+
+*{
+  margin: 0;
+  font-family: "Signika", sans-serif;
+  font-size: $basic-font-size;
+  color: $white;
+  font-weight: normal;
+}
+
+::selection {
+  background: $dark-yellow;
+}
+
+.section {
+  @include section-flex();
+
+  &--common-1 {
+    background: #000 url('./images/images/1st-screen.jpg') top no-repeat;
+    background-size: 100vw;
+  }
+
+  &--common-2 {
+    background: #000 url('./images/images/mid-page.jpg') center no-repeat;
+    background-size: 100vw;
+  }
+}
+
+.container {
+  width: 1180px;
+  position: relative;
+  flex-wrap: wrap;
+
+  &--header {
+    position: absolute;
+    z-index: 1;
+}
+
+  &--content {
+    padding-top: 100px;
+  }
+}
+
+.link {
+    text-decoration: none;
+
+  &--button {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &--black {
+    color: $black-text;
+  }
+
+  &--huge {
+    font-size: 32px;
+    font-family: "Playfair Display", serif;
+    color: $yellow;
+    padding: 20px 0 30px;
+    font-weight: bold;
+
+    &:hover {
+    color: $white;
+    }
+  }
+}
+
+.button {
+    @include button-flex();
+    @include button-style();
+    transition-duration: 0.5s;
+
+  &__arrow {
+    width: 14px;
+    height: 9px;
+    margin-right: 10px;
+
+    &--black {
+      background: url('./images/SVG/sprait.svg') no-repeat -1px -174px;
+    }
+
+    &--yellow {
+      background: url('./images/SVG/sprait.svg') no-repeat -1px -163px;
+    }
+  }
+
+  &__link {
+    color: $black-text;
+    font-weight: 600;
+    font-size: 14px;
+
+    &--yellow {
+      color: $yellow;
+    }
+  }
+
+  &:hover {
+    background-color: $dark-yellow;
+    color: $black-text;
+  }
+
+  &--grey {
+    background-color: $grey;
+
+    .link {
+      color: rgba(255,255,255,0.4);
+    }
+
+    &:hover {
+      .link {
+        color: $black-text;
+      }
+    }
+  }
+
+  &--small {
+    height: 30px;
+    padding: 0 12px;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+    color: $black-text;
+  }
+
+  &--black {
+    background-color: $black;
+    color: $yellow;
+
+    &:hover {
+      color: $black-text;
+
+      .button__arrow {
+        background: url('./images/SVG/sprait.svg') no-repeat -1px -174px;
+      }
+
+      .button__link {
+        color: $black-text;
+      }
+    }
+  }
+
+  &--wide {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+
+    .link {
+      opacity: 0.4;
+    }
+
+    &:hover {
+      .link {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.h2 {
+    font-family: "Playfair Display", serif;
+    font-size: $h2;
+    font-weight: bold;
+    padding-bottom: 28px;
+}
+
+.h4 {
+    opacity: 0.8;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.text {
+    line-height: 26px;
+    opacity: 0.8;
+
+  &--wide-box {
+    width: 380px;
+    padding-top: 7px;
+    padding-left: 10px;
+    opacity: 0.8;
+  }
+
+  &--vibrant {
+    opacity: 1;
+  }
+
+  &--section-description {
+    width: 50%;
+    padding-bottom: 20px;
+  }
+}
+
+.wide-box__item {
+  background: rgba(27, 49, 75, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .content {
+    padding: 70px 100px 103px 100px;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.decorative {
+    font-family: "Playfair Display", serif;
+    font-size: 56px;
+    font-weight: bold;
+  }
+
+.date {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+/*end basic*/
+
+/*basic mobile*/
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+
+  .section {
+    @include section-flex();
+
+    &--common-1 {
+      background: #000 url('./images/images/1st-screen.jpg') top no-repeat;
+      background-size: cover;
+    }
+
+    &--common-2 {
+      background: none;
+    }
+  }
+
+    .container {
+        width: calc(100vw - 40px);
+
+        &--content {
+          padding-top: 70px;
+        }
+    }
+
+    .h2 {
+      font-size: 26px;
+    }
+
+
+    .wide-box__item {
+      background: rgba(27, 49, 75, 1);
+
+      .content {
+        padding: 40px 0 103px 0;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+      }
+    }
+
+    .text {
+      &--section-description {
+        width: 100%;
+        padding-bottom: 20px;
+      }
+
+      &--wide-box {
+        padding: 0;
+      }
+    }
+
+    .button {
+
+      &--grey {
+        background-color: $yellow;
+
+        .link {
+          color: black;
+          opacity: 1;
+        }
+      }
+    }
+
+    .decorative {
+      font-size: 36px;
+    }
+}
+
+/* basic tablet */
+
+@media screen and (min-width : 568px) and (max-width: 1180px) {
+  .section {
+    @include section-flex();
+
+    &--common-1 {
+      background: #000 url('./images/images/1st-screen.jpg') top no-repeat;
+      background-size: cover;
+    }
+
+    &--common-2 {
+      background: none;
+    }
+  }
+
+    .container {
+        width: calc(100vw - 68px);
+
+        &--content {
+          padding-top: 70px;
+        }
+    }
+
+    .h2 {
+        font-size: $h2;
+    }
+
+    .wide-box__item {
+        background: rgba(27, 49, 75, 0.75);
+
+        .content {
+          padding: 40px 40px 103px 40px;
+          flex-flow: column;
+          align-items: center;
+          width: 100%;
+        }
+    }
+
+    .text {
+
+      &--wide-box {
+        padding: 0;
+      }
+    }
+    .button {
+
+      &--grey {
+        background-color: $yellow;
+
+        .link {
+          color: black;
+          opacity: 1;
+        }
+      }
+    }
+
+}

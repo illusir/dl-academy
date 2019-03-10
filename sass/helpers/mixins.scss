@@ -1,0 +1,40 @@
+@mixin section-flex() {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin button-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin right-side-flex() {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin button-style() {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  width: fit-content;
+}
+
+@mixin star-size() {
+  width: 16px;
+  height: 16px;
+}
+
+@mixin image-size() {
+  width: 280px;
+  height: 200px;
+}
+
+@mixin services-icon-size() {
+  width: 80px;
+  height: 80px;
+}

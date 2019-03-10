@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <!--<link rel="stylesheet" type="text/css" href="./reset.css"> - breaks stuff, not for use for now-->
     <!--<link href="https://fonts.googleapis.com/css?family=Signika|Playfair+Display" rel="stylesheet">-->
     <title>Williams Intellectual Property</title>
 
@@ -33,11 +34,11 @@
                 <div class="logo-nav-block">
                   <a class="logo" href="./index.html">
                   </a>
-                <nav class="nav">
+                <nav class="nav nav--header">
                     <a class="nav__link" href="#">
                         Who We Are
                     </a>
-                    <a class="nav__link" href="#">
+                    <a class="nav__link" href="./what-we-do.html">
                         What We Do
                     </a>
                     <a class="nav__link" href="#">
@@ -82,17 +83,72 @@
                         </div>
                   </div>
               </div>
-              <div class="burger">
-                  <div class="burger__bar burger__bar--first"></div>
-                  <div class="burger__bar burger__bar--second"></div>
-                  <div class="burger__bar burger__bar--last"></div>
-              </div>
+
               <div class="mobile-button">
                   <a href="#" class="link button button--small button--yellow button--arrow contact-block__buttons--first contact-block__buttons--all mobile-button__button">Submit Your Idea Now</a>
               </div>
         </div>
     </header>
+    <div class="test-mobile">
+    <div class="burger">
+        <div class="burger__bar burger__bar--first"></div>
+        <div class="burger__bar burger__bar--second"></div>
+        <div class="burger__bar burger__bar--last"></div>
+    </div>
+    <div class="mobile-menu">
+      <div class="container container--header container--mobile-header">
+              <div class="logo-nav-block">
+                <a class="logo" href="./index.html">
+                </a>
+            </div>
+              <div class="contact-block">
+                  <div class="contact-block__tel">
+                      <a class="link contact-block__link contact-block__link--tel" href="tel:18883571068">1-888-357-1068</a>
+                  </div>
+                <div class="cross">
+                </div>
+            </div>
 
+      </div>
+      <nav class="nav nav--mobile">
+          <a class="nav__link" href="#">
+              Who We Are
+          </a>
+          <a class="nav__link" href="./what-we-do.html">
+              What We Do
+          </a>
+          <a class="nav__link" href="#">
+              Patenting Process
+          </a>
+          <a class="nav__link" href="#">
+              FAQ
+          </a>
+          <a class="nav__link" href="#">
+              Fee Structure
+          </a>
+          <a class="nav__link" href="#">
+              Contact
+          </a>
+          <a class="nav__link" href="#">
+              Blog
+          </a>
+      </nav>
+      <div class="buttons-block--mobile">
+          <div class="button button--black contact-block__buttons--all button--small contact-block__buttons--hidden">
+              <div class="button__arrow button__arrow--yellow"></div>
+              <a href="#" class="link button__link button__link--yellow">Contact Us</a>
+          </div>
+          <div class="button button--black contact-block__buttons--all button--small contact-block__buttons--hidden">
+              <div class="button__arrow button__arrow--yellow"></div>
+              <a href="#" class="link button__link button__link--yellow">View Our Services</a>
+          </div>
+          <div class="button button--black contact-block__buttons--all button--small contact-block__buttons--hidden">
+              <div class="button__arrow button__arrow--yellow"></div>
+              <a href="#" class="link button__link button__link--yellow">Download Patent Overview</a>
+          </div>
+      </div>
+    </div>
+</div>
     <!--header-->
 
     <!--1st-screen-->
@@ -108,7 +164,7 @@
                     the exclusive right to their respective writings and discoveries.” US Constitution § 8, Clause 8
                 </p>
             </div>
-            <div class="social">
+            <div class="social social--top">
                 <a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank">
                 </a>
                 <a class="social__link social__link--tw" href="https://twitter.com/" target="_blank">
@@ -160,7 +216,7 @@
                       Ben, you have exceeded our expectations with the detail and professionalism put into this non-provisional patent.”
                   </p>
                 </div>
-                <div class="testimonials-block__item testimonials-block__item--inactive">
+                <div class="testimonials-block__item testimonials-block__item--inactive testimonials-block__item--tablet">
                   <h4 class="h4">
                       Robert, Richmond Hill NY
                   </h4>
@@ -169,7 +225,7 @@
                   </p>
                 </div>
             </div>
-            <div class="pages">
+            <div class="pages pages--testimonials">
                 <div class="pages__bar"></div>
                 <div class="pages__bar"></div>
                 <div class="pages__bar"></div>
@@ -191,6 +247,8 @@
                 We Can Help With
             </h2>
             <div class="services-block">
+
+              <div class="services-block__mobile-fix">
                 <div class="services-block__item">
                     <div class="services-icon services-icon--1">
                     </div>
@@ -204,6 +262,14 @@
                         <a class="link button__link link--wide" href="#">Learn more</a>
                     </div>
                 </div>
+                <div class="services-block__text">
+                  <h4 class="h4 h4--services h4--s-mobile">
+                    Utility Patents
+                  </h4>
+              </div>
+              </div>
+
+              <div class="services-block__mobile-fix">
                 <div class="services-block__item">
                     <div class="services-icon services-icon--2">
                     </div>
@@ -217,6 +283,14 @@
                         <a class="link button__link link--wide" href="#">Learn more</a>
                     </div>
                 </div>
+                <div class="services-block__text">
+                  <h4 class="h4 h4--services h4--s-mobile">
+                    Design Patents
+                  </h4>
+              </div>
+              </div>
+
+              <div class="services-block__mobile-fix">
                 <div class="services-block__item">
                     <div class="services-icon services-icon--3">
                     </div>
@@ -229,7 +303,15 @@
                     <div class="button button--wide button--grey">
                         <a class="link button__link link--wide" href="#">Learn more</a>
                     </div>
+                  </div>
+                  <div class="services-block__text">
+                    <h4 class="h4 h4--services h4--s-mobile">
+                      Provisional Patents
+                    </h4>
                 </div>
+                </div>
+
+              <div class="services-block__mobile-fix">
                 <div class="services-block__item">
                     <div class="services-icon services-icon--4">
                     </div>
@@ -243,6 +325,14 @@
                         <a class="link button__link link--wide" href="#">Learn more</a>
                     </div>
                 </div>
+                <div class="services-block__text">
+                  <h4 class="h4 h4--services h4--s-mobile">
+                    Plant Patents
+                  </h4>
+              </div>
+              </div>
+
+              <div class="services-block__mobile-fix">
                 <div class="services-block__item">
                     <div class="services-icon services-icon--5">
                     </div>
@@ -256,6 +346,14 @@
                         <a class="link button__link link--wide" href="#">Learn more</a>
                     </div>
                 </div>
+                <div class="services-block__text">
+                  <h4 class="h4 h4--services h4--s-mobile">
+                    Trademarks
+                  </h4>
+              </div>
+              </div>
+
+              <div class="services-block__mobile-fix">
                 <div class="services-block__item">
                     <div class="services-icon services-icon--6">
                     </div>
@@ -269,6 +367,12 @@
                         <a class="link button__link link--wide" href="#">Learn more</a>
                     </div>
                 </div>
+                <div class="services-block__text">
+                  <h4 class="h4 h4--services h4--s-mobile">
+                    International IP
+                  </h4>
+              </div>
+              </div>
             </div>
         </div>
     </section>
@@ -281,14 +385,14 @@
       <div class="container container--content container--thank-you">
         <div class="wide-box__item">
             <div class="content">
-              <div class="half-box">
+              <div class="half-box half-box--wide">
                 <div class="thank-you-icon">
                 </div>
                 <h2 class="h2 h2--thank-you">
                   Thank you for Choosing Williams Intellectual Property
                 </h2>
               </div>
-              <div class="half-box">
+              <div class="half-box half-box--wide">
                 <p class="text text--wide-box">
                     We’re here to help you through the complex labyrinth and changing landscape of the United States Patent and Trademark Office.
                     Let us leverage our expertise and help you, from paper to marketplace.
@@ -333,7 +437,7 @@
       <div class="container container--content container--call-us">
         <div class="wide-box__item">
             <div class="content">
-              <div class="half-box half-box--vertical">
+              <div class="half-box half-box--vertical half-box--wide">
                   <h2 class="decorative">
                       Call Us Today
                   </h2>
@@ -342,7 +446,7 @@
                   </span>
                   <a class="link link--huge" href="tel:18883571068">1-888-357-1068</a>
               </div>
-              <div class="half-box">
+              <div class="half-box half-box--wide">
                   <p class="text text--wide-box">
                       Our practitioners are ready to help you through the red tape and shifting landscape of the United States Patent and Trademark Office.
                       Before you spend thousands of dollars on promotion and prototyping – before you talk to anyone – talk to us.
@@ -379,7 +483,7 @@
                         The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to the crown.
                     </p>
                 </a>
-                <a href="#" class="articles-block__item">
+                <a href="#" class="articles-block__item articles-block__item--inactive">
                     <div class="article-image article-image--2">
                     </div>
                     <span class="date">
@@ -393,7 +497,7 @@
                         One works on his idea and then from idea, he moves to invention, and in the end to a patent application.
                     </p>
                 </a>
-                <a href="#" class="articles-block__item">
+                <a href="#" class="articles-block__item articles-block__item--inactive">
                     <div class="article-image article-image--3">
                     </div>
                     <span class="date">
@@ -406,7 +510,7 @@
                         Getting an application granted on the first go is like a dream come true.
                     </p>
                 </a>
-                <a href="#" class="articles-block__item">
+                <a href="#" class="articles-block__item articles-block__item--inactive articles-block__item--tablet">
                     <div class="article-image article-image--4">
                     </div>
                     <span class="date">
@@ -420,6 +524,15 @@
                     </p>
                 </a>
             </div>
+            <div class="button button--news button--small">
+                <a class="link button__link" href="#">Starting a business</a>
+            </div>
+            <div class="pages pages--news">
+                <div class="pages__bar"></div>
+                <div class="pages__bar"></div>
+                <div class="pages__bar"></div>
+                <div class="pages__bar"></div>
+            </div>
           </div>
     </section>
 
@@ -432,40 +545,41 @@
   <footer class="footer">
       <div class="container container--footer">
               <div class="container-footer__line1">
-                  <nav class="nav">
-                      <a class="nav__link" href="#">
-                          Who We Are
-                      </a>
-                      <a class="nav__link" href="#">
-                          What We Do
-                      </a>
-                      <a class="nav__link" href="#">
-                          Patenting Process
-                      </a>
-                      <a class="nav__link" href="#">
-                          FAQ
-                      </a>
-                      <a class="nav__link" href="#">
-                          Fee Structure
-                      </a>
-                      <a class="nav__link" href="#">
-                          Contact
-                      </a>
-                      <a class="nav__link" href="#">
-                          Submit Your Idea Now
-                      </a>
-                      <a class="nav__link" href="#">
-                          Blog
-                      </a>
+                  <nav class="nav nav--footer">
+                      <div class="nav__block1--footer">
+                        <a class="nav__link" href="#">
+                            Who We Are
+                        </a>
+                        <a class="nav__link" href="./what-we-do.html">
+                            What We Do
+                        </a>
+                        <a class="nav__link" href="#">
+                            Patenting Process
+                        </a>
+                        <a class="nav__link" href="#">
+                            FAQ
+                        </a>
+                      </div>
+                      <div class="nav__block2--footer">
+                        <a class="nav__link" href="#">
+                            Fee Structure
+                        </a>
+                        <a class="nav__link" href="#">
+                            Contact
+                        </a>
+                        <a class="nav__link" href="#">
+                            Submit Your Idea Now
+                        </a>
+                        <a class="nav__link" href="#">
+                            Blog
+                        </a>
+                    </div>
                     </nav>
-                    <div class="contact-block">
+                    <div class="contact-block contact-block--footer">
                         <div class="button button--yellow contact-block__buttons--first contact-block__buttons--all button--small">
                             <div class="button__arrow button__arrow--black"></div>
                             <a href="#" class="link button__link">Submit Your Idea Now</a>
                         </div>
-                    </div>
-                    <div class="mobile-button">
-                        <a href="#" class="link button button--small button--yellow button--arrow contact-block__buttons--first contact-block__buttons--all mobile-button__button">Submit Your Idea Now</a>
                     </div>
               </div>
               <div class="container-footer__line2">
