@@ -6,6 +6,9 @@
 
   &--we-do {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/images/inner/we-do.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -87,6 +90,12 @@
         padding-bottom: 20px;
       }
     }
+    &__breadcrumbs {
+      opacity: 0.5;
+      .page {
+        color: $yellow;
+      }
+    }
 }
 
 /*end 1st screen*/
@@ -109,6 +118,7 @@
             padding: 0;
           }
         }
+
       }
   }
 
