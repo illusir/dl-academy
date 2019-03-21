@@ -3,7 +3,7 @@
 var min = 1;
 var max = 10;
 var num = rndmnum(min, max);
-var urnum = prompt('Your number? Enter 4 digits!');
+var urnum = prompt('Your number from ' + min + ' to' + max + '?');
 var count = 0;
 var maxtries = 3; //3 tries only!
 
