@@ -3,9 +3,10 @@
 var min = 1;
 var max = 10;
 var num = rndmnum(min, max);
-var urnum = prompt('Your number from ' + min + ' to ' + max + '?');
+var urnum = prompt('Your number from ' + min + ' to ' + max + '?');//this returns random number
 var count = 0;
-var maxtries = 3; //3 tries only!
+var victory = 0;
+var maxtries = 3; //number of tries
 
 function rndmnum(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -16,7 +17,7 @@ while (urnum != num) {
 
   //no more tries
   if (count > maxtries) {
-    alert ('Time is up! You have no more attempts!');
+    alert ('Time is up! You have no more attempts! \nThe correct answer is ' + num);
     break;
     //comparison
   } else if (isNaN(urnum)) {
@@ -32,6 +33,9 @@ while (urnum != num) {
      //if correct
     if (urnum == num) {
       alert('Your answer: ' + urnum + ' is correct!');
-      alert('It took you only ' + count + ' tries!');
+      victory += 1;
+      alert('It took you only ' + count + ' tries! \nYou have ' + victory + ' victories!');
+      count = 0;
+      var urnum = prompt('One more try! \nYour number from ' + min + ' to ' + max + '?');
     }
 }
