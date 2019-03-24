@@ -1,4 +1,5 @@
 //Let's Play
+"use strict"
 
 var min = 1;
 var max = 10;
