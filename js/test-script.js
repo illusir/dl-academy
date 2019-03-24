@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 //Let's Play
 
