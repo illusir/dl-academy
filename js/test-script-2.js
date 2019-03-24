@@ -96,8 +96,8 @@ console.log (testArr);
 //console.log (testArr);
 
 //add values, unknown array length
-console.log ('We need to ddd missing words in the middle! (length unknown)');
+console.log ('We need to add missing words in the middle! (length unknown)');
 var arrLength = testArr.length;
 var arrMid = (testArr.length/2); //know the middle
-testArr.splice(arrMid, 0, "five", "six");
+testArr.splice(arrMid, 0, 'five', 'six');
 console.log (testArr);
