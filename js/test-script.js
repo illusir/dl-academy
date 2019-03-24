@@ -3,14 +3,14 @@
 var min = 1;
 var max = 10;
 var num = rndmnum(min, max);
-var urnum = prompt('Your number from ' + min + ' to ' + max + '?');//this returns random number
+var urnum = prompt('Your number from ' + min + ' to ' + max + '?');
 var count = 0;
 var victory = 0;
 var maxtries = 3; //number of tries
 
 function rndmnum(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+} //this returns random number
 
 while (urnum != num) {
   count += 1;
