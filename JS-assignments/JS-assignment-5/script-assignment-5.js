@@ -7,8 +7,8 @@ window.onload = function(){
     //variables
 
     var chessField = document.getElementById('checker');
-    var hor = 8;
-    var ver = 8;
+    var hor = 10;
+    var ver = 10;
     var numSpace = ver - 1;
 
     //numbers and letters
@@ -45,7 +45,7 @@ window.onload = function(){
       var row = chessField.appendChild(document.createElement('div'));
       row.classList.add('line');
       if (i >= 0 && i <= numSpace) {
-      row.innerHTML = num[i];
+    //  row.innerHTML = num[i];
       }
           for (var j = 0; j < hor; j++) {
             var span = row.appendChild(document.createElement('span'));

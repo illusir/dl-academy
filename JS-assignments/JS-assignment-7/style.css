@@ -20,6 +20,15 @@
   justify-content: space-between;
 }
 
+.container--content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.content {
+  background: black;
+}
+
 .logo {
 width: 50px;
 height: 50px;
@@ -40,10 +49,10 @@ height: 50px;
 .first-screen {
   background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("./1st-screen.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-color: #000;
-  height: 100vh;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,15 +62,36 @@ height: 50px;
     text-align: center;
     font-size: 60px;
     color: white;
-    margin-top: -120px;
+    /*margin-top: -120px;*/
 }
 
 .H2 {
-    text-align: center;
+    text-align: left;
     font-size: 32px;
     color: white;
+    margin: 0 0 5px 0;
+}
+
+.H3 {
+    text-align: left;
+    font-size: 24px;
+    color: white;
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.articles__block {
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #202020;
+  width: calc(100% / 3 - 15px);
+  margin-top: 25px;
 }
 
 .text {
@@ -69,27 +99,12 @@ height: 50px;
   font-size: 16px;
   color: white;
   margin: 0;
+  line-height: 1.7;
 }
 
-.button {
-  display: block;
-  width: 280px;
-  height: 50px;
-  background-color: #050505;
-  color: white;
-  text-transform: uppercase;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-
-}
-
-.button:hover {
-  background-color: #202020;
+.text--article {
+  text-align: left;
+  color: grey;
 }
 
 .modal-container {
@@ -120,82 +135,31 @@ height: 50px;
   border-radius: 4px;
 }
 
-.cross {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 30px;
-  right: 20px;
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.cross:hover {
-  opacity: 1;
-}
-
-.cross__line {
-  position: absolute;
-  top: 0;
-  left:0;
-  width: 20px;
-  height: 2px;
-  background-color: white;
-}
-
-.cross__line1 {
-  transform: rotate(45deg);
-}
-
-.cross__line2 {
-  transform: rotate(-45deg);
-}
-
-.burger {
-  display: block;
-  cursor: pointer;
-}
-
-.burger__bar {
-  width: 24px;
-  height: 2px;
-  background-color: white;
-  margin: 6px 0;
-}
-
-
-.menu-container {
-  background-color: rgba(0,0,0,0.7);
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  right:0;
-  display: flex;
-  justify-content: flex-end;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s;
-}
-
-.menu-container--active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.menu {
-  background-color: black;
-  width: 30vw;
-  height: 100vw;
-  padding: 60px;
-}
-
-.nav--menu {
-  display: flex;
-  flex-flow: column;
-}
-
 .nav__link--menu {
   padding-bottom: 40px;
 }
+
+.first {
+  position: relative;
+  z-index: -1
+}
+
+/* V 1st row of news - standalone svg, 2nd row - sprite. Works the same V */
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: url("./news-icon.svg") no-repeat;
+  padding-bottom: 20px;
+  filter: drop-shadow(0px 0px 5px #eeeeee);
+}
+
+.icon--sprite {
+  width: 50px;
+  height: 50px;
+  background: url('./news-sprite.svg') no-repeat -103px -1px;
+  padding-bottom: 20px;
+  filter: drop-shadow(0px 0px 5px #eeeeee);
+}
+
+/* ^ 1st row of news - standalone svg, 2nd row - sprite. Works the same ^ */
