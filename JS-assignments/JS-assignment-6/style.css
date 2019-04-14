@@ -38,7 +38,7 @@ height: 50px;
 }
 
 .first-screen {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("./1st-screen.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url("./1st-screen.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -71,6 +71,11 @@ height: 50px;
   margin: 0;
 }
 
+.text--modal {
+  line-height: 2;
+  text-align: left;
+}
+
 .button {
   display: block;
   width: 280px;
@@ -98,14 +103,14 @@ height: 50px;
   z-index: 10;
   top: 0;
   left:0;
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
   width: 100vw;
   height: 100vh;
   opacity: 0;
   pointer-events: none;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .modal-container--active {
@@ -114,10 +119,29 @@ height: 50px;
 }
 
 .modal {
-  position: relative;
+  position: fixed;
+  margin-top: -100px;
+  width: 680px;
   padding: 60px;
-  background-color: #202020;
+  box-sizing: border-box;
+  background-color: #323232;
   border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.modal__text {
+  min-height: 300px;
+  max-height: 500px;
+  overflow: auto;
+  padding-right: 30px;
+}
+
+.modal--active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .cross {
@@ -167,16 +191,14 @@ height: 50px;
 .menu-container {
   background-color: rgba(0,0,0,0.7);
   position: fixed;
-  z-index: 10;
+  z-index: 5;
   top: 0;
   right:0;
-  display: flex;
-  justify-content: flex-end;
   width: 100vw;
   height: 100vh;
   opacity: 0;
   pointer-events: none;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .menu-container--active {
@@ -185,10 +207,24 @@ height: 50px;
 }
 
 .menu {
-  background-color: black;
-  width: 30vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 7;
+  background-color: #323232;
+  width: 0;
   height: 100vw;
   padding: 60px;
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+
+}
+
+.menu--active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .nav--menu {
@@ -198,4 +234,6 @@ height: 50px;
 
 .nav__link--menu {
   padding-bottom: 40px;
+  padding-left: 0;
+  width: 320px;
 }

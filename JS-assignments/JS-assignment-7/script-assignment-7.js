@@ -17,5 +17,4 @@ onscroll = () => {
     addActive(true);
   } else addActive(false);
 
-
 };
