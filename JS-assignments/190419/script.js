@@ -7,6 +7,10 @@ var button = document.getElementById("button--1st-screen");
 var modalWindow = document.getElementById('modal');
 var cross = document.getElementById('cross');
 var crossTop = document.getElementById('cross-top');
+var first = document.getElementById("header");
+var second = document.getElementById("services-exam");
+var bg = document.getElementById("services-bg");
+
 
 //Show modal window
 
@@ -40,3 +44,25 @@ function hideModal() {
   */
 }
 hideModal();
+
+//Scroll
+
+function addActive() {
+  first.style.transform = `translateY(${pageYOffset/3}px)`;
+  first.style.filter = `blur(${pageYOffset/70}px)`;
+};
+
+function skew() {
+  if (pageYOffset < 200) {
+    bg.style.transform = `skewY(${pageYOffset/-50}deg)`;
+  }
+}
+
+onscroll = () => {
+if (pageYOffset >= 200) {
+    addActive(true);
+  } else addActive(false);
+
+  skew();
+
+};
