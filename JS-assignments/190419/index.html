@@ -6,11 +6,88 @@
         <title>Анастасия Смирнова - преподаватель музыки</title>
         <link rel="stylesheet" type="text/css" href="../../style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Open+Sans:400,800" rel="stylesheet">
+
+        <!--favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+        <link rel="manifest" href="./favicons/site.webmanifest">
+        <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#a406cc">
+        <meta name="msapplication-TileColor" content="#a406cc">
+        <meta name="theme-color" content="#ffffff">
+
     </head>
 
     <body id="body-exam">
+      <div class="modal-bg" id="modal-bg">
+      </div>
+      <div class="modal" id="modal">
+        <div class="cross-exam" id="cross">
+          <div class="cross-exam__line cross-exam__line1">
+          </div>
+          <div class="cross-exam__line cross-exam__line2">
+          </div>
+        </div>
+          <div class="modal-content">
+            <div class="modal__form">
+              <h2 class="h2-exam">
+                  Связь со мной
+              </h2>
+              <form class="form" action="index.html" method="post">
+                <div class="field">
+                  <p class="field__name">
+                    Введите ваше имя
+                  </p>
+                  <input name="name" type="text-exam" class="field__input">
+                </div>
+                <div class="field">
+                  <p class="field__name">
+                    Введите вашу фамилию
+                  </p>
+                  <input name="surname" type="text-exam" class="field__input">
+                </div>
+                <div class="field">
+                  <p class="field__name">
+                    Введите вашу электронную почту или номер телефона
+                  </p>
+                  <input name="mail-phone" type="text-exam" class="field__input">
+                </div>
+                <div class="field">
+                  <p class="field__name">
+                    Введите ваш комментарий
+                  </p>
+                  <textarea name="comment" type="text-exam" class="field__comment"></textarea>
+                </div>
+                <input type="submit" value="отправить заявку" class="button-exam button-exam--form">
+              </form>
+              <div class="social-exam social-exam--form">
+                  <span class="social-exam__text--form">или найдите меня в:</span>
+                  <div class="social-exam__icons--form">
+
+                          <a href="https://vk.com/top_kovshik" target="_blank" class="link-exam link-exam--social link-exam--vk social-icon--form">VK</a>
+
+
+                          <a href="https://www.instagram.com/duck_nastya" target="_blank" class="link-exam link-exam--social link-exam--instagram social-icon--form">Instagram</a>
+
+
+                         <a href="viber://add?number=+79397060730" target="_blank" class="link-exam link-exam--social link-exam--viber social-icon--form">Viber</a>
+
+
+                        <a href="whatsapp://send?phone=79397060730" target="_blank" class="link-exam link-exam--social link-exam--whatsapp social-icon--form">WhatsApp</a>
+
+
+                       <a href="skype:live:the.kovshik" target="_blank" class="link-exam link-exam--social link-exam--skype social-icon--form">Skype</a>
+
+                  </div>
+              </div>
+            </div>
+            <div class="modal__image">
+          </div>
+        </div>
+      </div>
 
     <header class="section-exam section-exam--header" id="header">
+      <div class="header-bg" id="header-bg"></div>
         <div class="container-exam container-exam--header">
             <div class="content-exam--header">
                 <div class="description">
@@ -20,9 +97,9 @@
                     <h1 class="h1-exam">
                         Анастасия Смирнова
                     </h1>
-                    <span class="text-exam text-exam--experience">
+                    <p class="text-exam text-exam--experience">
                         Стаж работы: 2 года
-                    </span>
+                    </p>
                     <p class="text-exam">
                         Вокальные школы имеют огромное количество различных техник и приёмов, предоставляющих возможность поставить голос, развить слух, ритмику, музыкальную память, а упорные занятия позволяют аттачивать талант безгранично. Ведь даже состоявшиеся исполнители берут уроки дабы не останавливаться в своём развитии.
                         Я помогу вам раскрыть свой талант и природный голос. Если вы хотите петь - просто пойте, а я направлю и помогу вам в этом.
@@ -34,7 +111,7 @@
                 <div class="contacts">
                     <div class="contacts__item">
                         <div class="icon icon--mail"></div>
-                        <a class="link link--desc" href="#" target="_blank">client@tutor-music.ru</a>
+                        <a class="link link--desc" href="mailto:client@tutor-music.ru" target="_blank">client@tutor-music.ru</a>
                     </div>
                     <div class="contacts__item">
                         <div class="icon icon--phone"></div>
@@ -47,7 +124,7 @@
                                 <a href="https://vk.com/top_kovshik" target="_blank" class="link-exam link-exam--social link-exam--vk">VK</a>
 
 
-                                <a href="https://www.instagram.com/" target="_blank" class="link-exam link-exam--social link-exam--instagram">Instagram</a>
+                                <a href="https://www.instagram.com/duck_nastya" target="_blank" class="link-exam link-exam--social link-exam--instagram">Instagram</a>
 
 
                                <a href="viber://add?number=+79397060730" target="_blank" class="link-exam link-exam--social link-exam--viber">Viber</a>
@@ -56,84 +133,18 @@
                               <a href="whatsapp://send?phone=79397060730" target="_blank" class="link-exam link-exam--social link-exam--whatsapp">WhatsApp</a>
 
 
-                             <a href="skype:drug116?chat" target="_blank" class="link-exam link-exam--social link-exam--skype">Skype</a>
+                             <a href="skype:live:the.kovshik" target="_blank" class="link-exam link-exam--social link-exam--skype">Skype</a>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-bg" id="modal-bg">
-            </div>
-            <div class="modal" id="modal">
-              <div class="cross-exam" id="cross">
-                <div class="cross-exam__line cross-exam__line1">
-                </div>
-                <div class="cross-exam__line cross-exam__line2">
-                </div>
-              </div>
-                <div class="modal-content">
-                  <div class="modal__form">
-                    <h2 class="h2-exam">
-                        Связь со мной
-                    </h2>
-                    <form class="form" action="index.html" method="post">
-                      <div class="field">
-                        <p class="field__name">
-                          Введите ваше имя
-                        </p>
-                        <input name="name" type="text-exam" class="field__input">
-                      </div>
-                      <div class="field">
-                        <p class="field__name">
-                          Введите вашу фамилию
-                        </p>
-                        <input name="surname" type="text-exam" class="field__input">
-                      </div>
-                      <div class="field">
-                        <p class="field__name">
-                          Введите вашу электронную почту или номер телефона
-                        </p>
-                        <input name="mail-phone" type="text-exam" class="field__input">
-                      </div>
-                      <div class="field">
-                        <p class="field__name">
-                          Введите ваш комментарий
-                        </p>
-                        <textarea name="comment" type="text-exam" class="field__comment"></textarea>
-                      </div>
-                      <input type="submit" value="отправить заявку" class="button-exam button-exam--form">
-                    </form>
-                    <div class="social-exam social-exam--form">
-                        <span class="social-exam__text--form">или найдите меня в:</span>
-                        <div class="social-exam__icons--form">
 
-                                <a href="https://vk.com/top_kovshik" target="_blank" class="link-exam link-exam--social link-exam--vk social-icon--form">VK</a>
-
-
-                                <a href="https://www.instagram.com/" target="_blank" class="link-exam link-exam--social link-exam--instagram social-icon--form">Instagram</a>
-
-
-                               <a href="viber://add?number=+79397060730" target="_blank" class="link-exam link-exam--social link-exam--viber social-icon--form">Viber</a>
-
-
-                              <a href="whatsapp://send?phone=79397060730" target="_blank" class="link-exam link-exam--social link-exam--whatsapp social-icon--form">WhatsApp</a>
-
-
-                             <a href="skype:drug116?chat" target="_blank" class="link-exam link-exam--social link-exam--skype social-icon--form">Skype</a>
-
-                        </div>
-                    </div>
-                  </div>
-                  <div class="modal__image">
-                </div>
-              </div>
-            </div>
-            <div class="mouse">
-              <a class="mouse__icon" href="#services-exam">
-              </a>
-            </div>
         </div>
-
+        <div class="mouse">
+          <a class="mouse__icon" href="#services-exam">
+          </a>
+        </div>
     </header>
     <section class = "section-exam section-exam--services">
       <div class="services-bg" id="services-bg"></div>
@@ -258,9 +269,10 @@
                 Руслан Андреевич
               </h4>
               <p class="text-exam text-exam--comment">
-                Решил сделать подарок супруге и спеть ей песню. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+                Решил сделать подарок супруге на очередную годовщину свадьбы и спеть ей песню. Хотелось сделать это качественно по этому обратился к профи.
+                Цель была достигнута довольно быстро, Настя грамотно подвела меня к своему первому хоть и семейному выступлению. Сейчас продолжаю занятия, только уже на другом уровне при помощи Насти.
               </p>
-              <a href="https://vk.com/" target="_blank" class="link-exam link-exam--social link-exam--vk social-icon--comment">VK</a>
+              <a href="https://www.instagram.com/drug116" target="_blank" class="link-exam link-exam--social link-exam--instagram social-icon--comment">Instagram</a>
             </div>
           </div>
         </div>

@@ -3,11 +3,12 @@
 //variables
 
 var button = document.getElementById("button--1st-screen");
-//var modal = document.getElementById('modal-bg');
+var modal = document.getElementById('modal-bg');
 var modalWindow = document.getElementById('modal');
 var cross = document.getElementById('cross');
 var crossTop = document.getElementById('cross-top');
 var first = document.getElementById("header");
+var firstBg = document.getElementById("header-bg");
 var second = document.getElementById("services-exam");
 var bg = document.getElementById("services-bg");
 
@@ -16,22 +17,20 @@ var bg = document.getElementById("services-bg");
 
 button.onclick = function () {
 function showModal() {
-  //modal.classList.add('modal-bg--active');
+  modal.classList.add('modal-bg--active');
   modalWindow.classList.add('modal--active');
-  modalWindow.style.height = "100vh";
+  //modalWindow.style.height = "100vh";
 }
 showModal();
 }
 
 function hideModal() {
   //hide by clicking on the cross
-  cross.onclick = function() {
+      cross.onclick = function() {
       modal.classList.remove('modal-bg--active');
       modalWindow.classList.remove('modal--active');
-      modalWindow.style.height = "0";
+      //modalWindow.style.height = "0";
   }
-
-  /*
 
   //hide by clicking on the space around
   window.addEventListener('click', function(event) {
@@ -41,7 +40,6 @@ function hideModal() {
   }
   });
 
-  */
 }
 hideModal();
 
@@ -49,7 +47,7 @@ hideModal();
 
 function addActive() {
   first.style.transform = `translateY(${pageYOffset/3}px)`;
-  first.style.filter = `blur(${pageYOffset/70}px)`;
+  firstBg.style.filter = `blur(${pageYOffset/70}px)`;
 };
 
 function skew() {
