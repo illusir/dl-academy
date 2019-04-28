@@ -16,7 +16,7 @@
     }
 
     &--testimonials {
-      background: url("./JS-assignments/190419/images/images/bottom-pic.jpg") top no-repeat;
+      background: url("./JS-assignments/190419/images/images/bottom-pic.jpg") bottom no-repeat;
       background-size: cover;
     }
 }
@@ -399,6 +399,7 @@
     padding-left: 10px;
     box-sizing: border-box;
     border: 1px solid #cccccc;
+    color: black;
   }
 
   &__comment {
@@ -523,7 +524,7 @@
   }
 
   &__comment {
-    width: 60%;
+    width: 65%;
   }
 
   &__controls {
@@ -580,33 +581,47 @@ html {
 
 @media screen and (min-width: 320px) and (max-width: 568px) {
 
-  .section-exam {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .container-exam {
+      width: calc(100vw - 40px);
 
-      &--header {
-        position: relative;
-        width: calc(100vw - 20px);
-        height: auto;
+      &--testimonials {
+        padding-top: 220px;
       }
   }
 
-  .testimonials-exam {
-    flex-direction: column;
-    flex-wrap: wrap;
+  .services-exam {
+    flex-flow: column;
   }
-
 }
 
 /* basic tablet */
 
 @media screen and (min-width : 568px) and (max-width: 1180px) {
 
+  .container-exam {
+      width: calc(100vw - 60px);
 
+      &--testimonials {
+        padding-top: 280px;
+      }
+  }
+
+  .services-exam {
+
+    &__popup {
+      width: 280px;
+      padding: 10px 20px 20px 20px;
+    }
+  }
+
+  .modal {
+    width: 85%;
+    padding: 40px;
+  }
+
+  .cross-exam {
+    top: 60px;
+    right: 40px;
+  }
 
 }
